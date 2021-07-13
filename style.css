@@ -1,5 +1,158 @@
+/*------------------------------
+   CSS Commons and Utilities 
+  -----------------------------*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+/*------------------------------
+         Header Section 
+  -----------------------------*/
+header {
+  background: #2d25a0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 76px;
+  margin-bottom: 70px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1160px;
+  margin-top: 42px;
+}
+/* Main Menu */
+.main-menu ul {
+  list-style: none;
+  display: flex;
+}
+.main-menu ul a {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 10px 25px;
+  border-bottom: 2px solid transparent;
+}
+.main-menu ul li:first-child a {
+  margin-left: 0;
+}
+
+.main-menu a:hover {
+  border-bottom: 2px solid #e02c6d;
+}
+
+/* Login Button */
+.login-btn-container {
+  background: #e02c6d;
+  padding: 10px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.login-btn-container:hover {
+  background: black;
+}
+.login-btn {
+  font-size: 16px;
+  font-weight: 500;
+  background: inherit;
+  border: 0;
+  color: white;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.fa-sign-in-alt {
+  color: white;
+  font-size: 16px;
+}
+
+/*------------------------------
+         Hero Section 
+  -----------------------------*/
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1160px;
+  padding-top: 67px;
+}
+.text-content h1 {
+  font-size: 64px;
+  font-weight: 700;
+  color: white;
+  line-height: 80px;
+  width: 500px;
+}
+.primary-btn {
+  background: #e02c6d;
+  display: inline-block;
+  padding: 10px 24px;
+  transition: 0.3s ease-in-out;
+  margin-top: 27px;
+}
+.primary-btn a {
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-right: 8px;
+}
+.primary-btn:hover {
+  background: black;
+  transform: scale(1.1);
+}
+.fa-arrow-right {
+  font-size: 16px;
+  color: white;
+}
+
+.hero-section-image img {
+  width: 550px;
+}
+/*------------------------------
+        End of Header 
+  -----------------------------*/
+/*------------------------------
+        Blog Grid 
+  -----------------------------*/
+main {
+  display: flex;
+  justify-content: center;
+}
+article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 27px;
+  column-gap: 30px;
+}
+.blog {
+  width: 330px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+}
+.blog img {
+  width: 300px;
+  height: 256px;
+}
+.blog h2 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+}
+.blog p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #6c6c6c;
 }
